@@ -5,7 +5,7 @@
 ?>
 
 <!doctype html>
-<html lang="en">
+<html lang="it">
 
 <head>
     <meta charset="utf-8">
@@ -16,7 +16,7 @@
 
 <body data-bs-theme="dark">
     <h1 class="text-center">Inserisci una partita</h1>
-    <div class="mx-auto w-25 border border-1 border-primary rounded p-2">
+    <div class="mx-auto w-50 border border-1 border-primary rounded p-2">
         <form action="./raccoltaRisultati.php" method="post">
             <select class="form-select" name="ID_squadraDiCasa">
                 <option selected>Squadra in casa</option>

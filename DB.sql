@@ -16,11 +16,13 @@ CREATE table Partita (
 	gool_squadraOspite int default 0,
 	
 	foreign key (ID_squadraDiCasa) references Squadra(ID),
-	foreign key (ID_squadraOspite) references Squadra(ID)
+	foreign key (ID_squadraOspite) references Squadra(ID),
+	
+	unique (ID_squadraDiCasa, ID_squadraOspite)
 );
 
 INSERT INTO Squadra (nome) values
-("Squadra 1"), ("Squadra 2"), ("Squadra 3");
+("Squadra 1"), ("Squadra 2"), ("Squadra 3"), ("Squadra 4");
 
 INSERT INTO Partita (ID_squadraDiCasa,ID_squadraOspite, gool_squadraDiCasa, gool_squadraOspite) values
-(1,2,0,2), (1,2,5,2), (2,1,1,0);
+(1,2,1,1), (2,1,2,3), (2,3,10,5), (1,3,4,6);
